@@ -1,0 +1,20 @@
+:root {
+    --theme-color: #000;
+    --theme-reverse: #fff;
+    --background: #0E1320;
+    --nav-bg: rgba(16, 24, 37, .75);
+    --primary:#a855f7;
+    --secondary:rgba(168, 85, 247, .1);
+    --shadow: 0 4px 6px rgba(255, 255, 255, 0.1), 0 1px 3px rgba(255, 255, 255, 0.08);
+    --shadowCard: 0 10px 15px rgba(255, 255, 255, 0.2), 0 4px 6px rgba(255, 255, 255, 0.1);
+}
+
+.light {
+    --theme-color: rgb(94, 88, 88);
+    --theme-reverse: #000;
+    --background: #f9f9f9;
+    --nav-bg: rgba(255, 255, 255, 0.75);
+    --secondary:rgba(0, 0, 0, 0.1);
+    --shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(204, 32, 32, 0.08);
+    --shadowCard: 0 10px 15px rgba(23, 19, 19, 0.2), 0 4px 6px rgba(255, 255, 255, 0.1);
+}
