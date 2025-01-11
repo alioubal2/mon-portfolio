@@ -18,15 +18,23 @@ body {
     margin: 0 auto;
 }
 
+h1 {
+    font-size: 2.25em;
+}
+
+h2 {
+    font-size: 2em;
+    margin-bottom: 60px;
+}
+
+p {
+    font-size: 1.25em;
+}
+
 a {
     text-decoration: none;
     cursor: pointer;
 }
-
-h2 {
-    margin-bottom: 60px;
-}
-
 
 header {
     display: flex;
@@ -34,18 +42,18 @@ header {
     justify-content: space-between;
     margin-top: 20px;
     height: 60px;
-    position: fixed;
-    width: 80%;
-    z-index: 2;
 }
 
 nav ul {
     background-color: var(--nav-bg);
     width: 650px;
-    height: 70px; 
+    height: 70px;
+    top: 20px;
+    position: fixed;
+    z-index: 2;
     border-radius: 10px;
-    display: flex; 
-    justify-content: center; 
+    display: flex;
+    justify-content: center;
     align-items: center;
     backdrop-filter: blur(4px);
     box-shadow: 0 0 10px rgba(0, 0, 0, .5);
@@ -54,7 +62,7 @@ nav ul {
 nav ul li {
     text-decoration: none;
     display: inline;
-    padding: 0 35px; 
+    padding: 0 35px;
     font-size: 1.2em;
 }
 
@@ -63,6 +71,10 @@ nav ul li {
     padding: 5px;
     border-radius: 5px;
     transition: .3s;
+}
+
+.menu-icon {
+    display: none !important;
 }
 
 .nav-item:hover,
@@ -83,7 +95,6 @@ nav ul li {
 
 .container h2 {
     text-align: center;
-    font-size: 2em;
     border-left: 5px solid var(--primary);
     background: var(--secondary);
     padding: 15px 0;
@@ -93,7 +104,7 @@ nav ul li {
 #home {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    gap: 80px;
 }
 
 .picture {
@@ -120,12 +131,7 @@ nav ul li {
 
 .hero p {
     text-align: justify;
-    font-size: 1.25em;
     line-height: 30px;
-}
-
-.hero h1 {
-    font-size: 2.25em;
 }
 
 button {
@@ -136,7 +142,7 @@ button {
     border-radius: 5px;
     width: 200px;
     cursor: pointer;
-    z-index: 1; 
+    z-index: 1;
     background-color: var(--primary);
     border: 1px solid var(--primary);
     transition: color .5s ease;
@@ -152,12 +158,12 @@ button::before {
     overflow: hidden;
     background-color: var(--nav-bg);
     border-radius: 5px;
-    z-index: -1; 
+    z-index: -1;
     transition: width 0.5s ease;
 }
 
 button:hover::before {
-    width: 100%; 
+    width: 100%;
 }
 
 button:hover {
@@ -165,7 +171,7 @@ button:hover {
 }
 
 
-#about {
+.about-content {
     display: flex;
     flex-direction: column;
     gap: 30px;
@@ -192,7 +198,6 @@ button:hover {
 
 #about p {
     text-align: justify;
-    font-size: 1.25em;
     line-height: 30px;
 }
 
@@ -249,7 +254,7 @@ form input {
     padding: 14px;
     border-radius: 5px;
     border: none;
-    font-size: 1.1rem;
+    font-size: 1.1em;
     background: var(--secondary);
 }
 
@@ -267,6 +272,7 @@ form textarea {
     resize: none;
     width: 650px;
 }
+
 footer {
     display: flex;
     justify-content: space-around;
@@ -296,4 +302,187 @@ footer {
 
 .link a i:hover {
     color: rgba(138, 43, 226, 6);
+}
+
+
+/* Responsive */
+
+@media screen and (max-width: 1170px) {
+    #home {
+        gap: 30px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    p {
+        font-size: 1em;
+    }
+
+    .picture img {
+        height: 240px;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    .about-content {
+        gap: 15px;
+    }
+}
+
+@media screen and (max-width: 964px) {
+    body {
+        width: 90%;
+    }
+
+    nav ul li {
+        font-size: 1em;
+    }
+}
+
+@media screen and (max-width: 760px) {
+    nav ul {
+        width: 500px;
+        height: 50px;
+    }
+
+    nav ul li {
+        padding: 0 20px;
+        font-size: 0.8em;
+    }
+
+    #home {
+        flex-direction: column-reverse;
+        gap: 20px;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    p {
+        font-size: 0.8em;
+    }
+
+    .picture img {
+        height: 260px;
+    }
+
+    h2 {
+        font-size: 1em;
+    }
+
+    .about-content {
+        gap: 10px;
+    }
+
+    button {
+        padding: 10px 15px;
+        font-size: 13px;
+        width: 140px;
+    }
+
+    h3 {
+        font-size: 0.8em;
+    }
+
+    .card-container {
+        gap: 30px;
+    }
+
+    .card {
+        width: 200px;
+        height: 150px;
+    }
+
+    .card svg {
+        width: 50px;
+    }
+
+    form input {
+        width: 240px;
+    }
+
+    form textarea,
+    form input {
+        font-size: 0.8rem;
+    }
+
+    form textarea {
+        width: 500px;
+    }
+
+    .link a i {
+        font-size: 25px;
+    }
+
+}
+
+@media screen and (max-width:590px) {
+    .container {
+        min-height: auto;
+    }
+    .menu-icon {
+        position: fixed;
+        bottom: 20px;
+        right: 5%;
+        display: inline-block !important;
+        background: var(--primary);
+        padding: 10px;
+        border-radius: 50%;
+        z-index: 2;
+    }
+
+    nav ul {
+        width: 150px;
+        height: 250px;
+        display: none;
+        flex-direction: column;
+        justify-content: space-between;
+        right: 5%;
+        top: auto;
+        bottom: 80px;
+        padding: 20px 0;
+    }
+
+    
+
+    .card {
+        width: 150px;
+        height: 120px;
+    }
+
+    .card svg {
+        width: 40px;
+    }
+
+    .input-text {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    form input {
+        width: 300px;
+    }
+
+    form textarea,
+    form input {
+        font-size: 0.8rem;
+    }
+
+    form textarea {
+        width: 300px;
+    }
+
+    footer {
+        min-height: 250px;
+        padding: 20px 0;
+        flex-direction: column;
+        text-align: center;
+        position: relative;
+    }
+
 }

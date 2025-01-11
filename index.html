@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <script src="script.js" defer></script>
     <title>portfolio</title>
 </head>
@@ -20,6 +21,7 @@
                 <li><a href="#skills" class="nav-item">Compétences</a></li>
                 <li><a href="#contact" class="nav-item">Contact</a></li>
             </ul>
+            <span class="material-symbols-outlined menu-icon">menu</span>
         </nav>
 
         <div class="icon">
@@ -43,26 +45,33 @@
             </div>
 
             <div class="picture">
-                <img src="image/youngOfficier.jpg" alt="Ma photo">
+                <img src="images/me.jpg" alt="Ma photo">
             </div>
         </section>
 
         <section class="container" id="about">
             <h2>👋 À propos</h2>
-            <p>Bonjour ! Je m'appelle <strong>Mamadou Aliou Baldé</strong> 😊. Je suis un passionné de développement web
-                avec une ambition claire : devenir un <strong>développeur full-stack</strong> 🖥️ capable de créer des
-                applications performantes, aussi bien côté client que côté serveur.
-            </p>
+            <div class="about-content">
+                <p>Bonjour ! Je m'appelle <strong>Mamadou Aliou Baldé</strong> 😊. Je suis un passionné de développement
+                    web
+                    avec une ambition claire : devenir un <strong>développeur full-stack</strong> 🖥️ capable de créer
+                    des
+                    applications performantes, aussi bien côté client que côté serveur.
+                </p>
 
-            <p>🌟 <strong>Pourquoi le développement web ?</strong>
-                Ce qui me passionne, c'est la possibilité de transformer des idées 💡 en solutions numériques tangibles
-                🚀. J'aime relever des défis, apprendre constamment 📚, et collaborer avec des personnes partageant les
-                mêmes intérêts 🤝.
-            </p>
+                <p>🌟 <strong>Pourquoi le développement web ?</strong>
+                    Ce qui me passionne, c'est la possibilité de transformer des idées 💡 en solutions numériques
+                    tangibles
+                    🚀. J'aime relever des défis, apprendre constamment 📚, et collaborer avec des personnes partageant
+                    les
+                    mêmes intérêts 🤝.
+                </p>
 
-            <p>📩 Envie de travailler ensemble ?
-                <a href="#contact">Contactez-moi</a> dès maintenant et voyons comment nous pouvons concrétiser vos projets ! 🎯
-            </p>
+                <p>📩 Envie de travailler ensemble ?
+                    <a href="#contact">Contactez-moi</a> dès maintenant et voyons comment nous pouvons concrétiser vos
+                    projets ! 🎯
+                </p>
+            </div>
 
         </section>
 
@@ -234,7 +243,7 @@
             <form action="">
                 <div class="input-text">
                     <input type="text" name="nom" placeholder="Votre nom" required>
-                <input type="text" name="prénom" placeholder="Votre prénom" required>
+                    <input type="text" name="prénom" placeholder="Votre prénom" required>
                 </div>
                 <textarea name="message" cols="30" rows="10" placeholder="Votre message..."></textarea>
                 <button type="submit" name="submit-button" value="Envoyer">Envoyer</button>
@@ -243,11 +252,11 @@
     </main>
 
     <footer>
-        <p>&copy; Copyright 2025 - tous droits réservés</p>
+        <p class="para">&copy; Copyright 2025 - tous droits réservés</p>
 
         <div class="address">
-            <span>Kobayah, Conakry, Guinée</span>
-            <span>+224 626 03 21 34</span>
+            <p>Kobayah, Conakry, Guinée</p>
+            <p>+224 626 03 21 34</p>
         </div>
 
         <div class="link">
